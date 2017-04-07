@@ -61,16 +61,20 @@ public class SnakesAndLaddersService {
             x = 91;
         }
 
+        if (x >= 100) {
+            x = 100;
+        }
+
         Player updatePlayer = new Player(player.getId(), x, rand);
         return updatePlayer;
     }
 
     // winner condition
     public boolean winner(Player player1, Player player2){
-        if (player1.getPosition() >= 100){
+        if (player1.getPosition() == 100){
             System.out.println(player1.getId() + " WON!");
             return true;
-        } else if (player2.getPosition() >= 100){
+        } else if (player2.getPosition() == 100){
             System.out.println(player2.getId() + " WON!");
             return true;
         } return false;
