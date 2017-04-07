@@ -1,6 +1,5 @@
 package com.theironyard;
 
-import java.util.ArrayList;
 import java.util.Random;
 
 /**
@@ -9,10 +8,12 @@ import java.util.Random;
 public class SnakesAndLaddersService {
 
     // The game method
-    public int rollDice(int currentPosition) {
+    public Player rollDice(Player player) {
         // Roll dice
         Random random = new Random();
-        int x = currentPosition + random.nextInt(6) + 1;
+        int rand = random.nextInt(6) + 1;
+        // updates position
+        int x = player.getPosition() + rand;
 
         // SNAKES !!
         if (x == 17) {
@@ -60,22 +61,18 @@ public class SnakesAndLaddersService {
             x = 91;
         }
 
-        return x;
+        Player updatePlayer = new Player(player.getId(), x, rand);
+        return updatePlayer;
     }
 
     // winner condition
-    public boolean winner(SnakesAndLaddersPlayer player1, SnakesAndLaddersPlayer player2){
+    public boolean winner(Player player1, Player player2){
         if (player1.getPosition() >= 100){
-            System.out.println(player1.getName() + " WON!");
+            System.out.println(player1.getId() + " WON!");
             return true;
         } else if (player2.getPosition() >= 100){
-            System.out.println(player2.getName() + " WON!");
+            System.out.println(player2.getId() + " WON!");
             return true;
         } return false;
-    }
-
-    //sending data to database from arraylist
-    public void updateDatabase(ArrayList<Integer> list){
-
     }
 }

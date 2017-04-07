@@ -3,15 +3,17 @@ package com.theironyard;
 /**
  * Created by JamesHartanto on 4/6/17.
  */
-public class SnakesAndLaddersPlayer {
+public class Player {
     private int id;
-    private String name;
     private int position;
+    private int dice;
 
-    public SnakesAndLaddersPlayer(int id, String name, int position) {
+
+    public Player(int id, int position, int dice) {
         this.id = id;
-        this.name = name;
         this.position = position;
+        this.dice = dice;
+
     }
 
     public int getId() {
@@ -22,19 +24,19 @@ public class SnakesAndLaddersPlayer {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getPosition() {
         return position;
     }
 
     public void setPosition(int position) {
         this.position = position;
+    }
+
+    public int getDice() {
+        return dice;
+    }
+
+    public void setDice(int dice) {
+        this.dice = dice;
     }
 }
