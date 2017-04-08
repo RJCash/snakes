@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Template</title>
+    <script src="https://use.fontawesome.com/d631437608.js"></script>
+    <link rel="stylesheet" href="../snakes/src/main/resources/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" href="../snakes/src/main/resources/css/styles.css">
+</head>
+
+<body>
+
+
+  <div class="content">
+
+    <div id="current-dice-roll">
+      <p></p>
+      <h1></h1>
+    </div>
+
+    <header>
+      <h1 data-text="Snakes & Ladders On a Plane">Snakes & Ladders <span>On a Plane</span></h1>
+    </header>
+
+    <div class="gameboard">
+      <table>
+        <tr>
+          <td id="n100" class="color7">100
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color2">99
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color3">98
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color4">97
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color5">96
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color6">95
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color1">94
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color2">93
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color3">92
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color4">91
+            <div class="player1"></div>
+            <div class="player2"></div></td>
+        </tr>
+        <tr>
+          <td class="color5">81
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color6">82
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color1">83
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color2">84
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color3">85
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color4">86
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color5">87
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color6">88
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color1">89
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color2">90
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="color3">80
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color4">79
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color5">78
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color6">77
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color1">76
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color2">75
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color3">74
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color4">73
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color5">72
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color6">71
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="color1">61
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color2">62
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color3">63
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color4">64
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color5">65
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color6">66
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color1">67
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color2">68
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color3">69
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color4">70
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="color5">60
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color6">59
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color1">58
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color2">57
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color3">56
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color4">55
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color5">54
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color6">53
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color1">52
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color2">51
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="color3">41
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color4">42
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color5">43
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color6">44
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color1">45
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color2">46
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color3">47
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color4">48
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color5">49
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color6">50
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="color1">40
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color2">39
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color3">38
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color4">37
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color5">36
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color6">35
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color1">34
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color2">33
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color3">32
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color4">31
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="color5">21
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color6">22
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color1">23
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color2">24
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color3">25
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color4">26
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color5">27
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color6">28
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color1">29
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color2">30
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="color3">20
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color4">19
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color5">18
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color6">17
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color1">16
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color2">15
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color3">14
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color4">13
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color5">12
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td class="color6">11
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+        </tr>
+        <tr>
+          <td id="n1" class="color1">1
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td id="n2" class="color2">2
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td id="n3" class="color3">3
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td id="n4" class="color4">4
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td id="n5" class="color5">5
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td id="n6" class="color6">6
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td id="n7" class="color1">7
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td id="n8" class="color2">8
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td id="n9" class="color3">9
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+          <td id="n10" class="color4">10
+            <div class="player1"></div>
+            <div class="player2"></div>
+          </td>
+        </tr>
+
+        <img id="snake1" src="../snakes/src/main/resources/images/snake.svg" alt="snake">
+        <img id="snake2" src="../snakes/src/main/resources/images/snake.svg" alt="snake">
+        <img id="snake3" src="../snakes/src/main/resources/images/snake.svg" alt="snake">
+        <img id="snake4" src="../snakes/src/main/resources/images/snake.svg" alt="snake">
+        <img id="snake5" src="../snakes/src/main/resources/images/snake.svg" alt="snake">
+        <img id="snake6" src="../snakes/src/main/resources/images/snake.svg" alt="snake">
+        <img id="snake7" src="../snakes/src/main/resources/images/snake.svg" alt="snake">
+    </div>
+
+    <div class="play">
+      <form class="form" action="index.html" method="post">
+        <input type="button" name="" value="ROLL" id="roll">
+      </form>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../snakes/src/main/resources/js/script.js"></script>
+</body>
+
+</html>
