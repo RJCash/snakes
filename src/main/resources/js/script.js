@@ -2,15 +2,16 @@ $(document).ready(function(){
 
   var turn = -1;
   var moves = [
-    // {token: 1, location: 3, dice: 3},
-    // {token: 2, location: 4, dice: 4},
-    // {token: 1, location: 8, dice: 5},
-    // {token: 2, location: 6, dice: 2}
-    [1,3,3],
-    [2,4,4],
-    [1,8,5],
-    [2,6,2],
-    [1,105,92]
+    // // {token: 1, location: 3, dice: 3},
+    // // {token: 2, location: 4, dice: 4},
+    // // {token: 1, location: 8, dice: 5},
+    // // {token: 2, location: 6, dice: 2}
+    // [1,3,3],
+    // [2,4,4],
+    // [1,8,5],
+    // [2,6,2],
+    // [1,105,92]
+      [[${oneGame}]]
   ];
 
   $('#roll').click(function(){
