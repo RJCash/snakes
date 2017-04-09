@@ -21,7 +21,7 @@ $(document).ready(function(){
     var diceNumber = moves[turn][2];
     $(cellNumber + " " + playerNumber).css("display", "block");
 
-    document.querySelector('#current-dice-roll p').innerHTML = "Player " + moves[turn][0] + ", <br>you rolled a ";
+    document.querySelector('#current-dice-roll p').innerHTML = "PLAYER " + moves[turn][0] + " rolled:";
     document.querySelector('#current-dice-roll h1').innerHTML = diceNumber;
 
     var lastTurn = turn - 2;
