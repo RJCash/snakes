@@ -1,0 +1,73 @@
+#winner body {
+  background-color: #fa3600;
+  background-image: linear-gradient(black, #fa3600);
+  background-repeat: no-repeat;
+  // display: flex;
+  // justify-content: center;
+  box-sizing: border-box;
+  font-family:'Anton', sans-serif;
+  font-size: 20px;
+  letter-spacing: .1rem;
+  text-align: center;
+  // padding:0 20px;
+}
+
+#winner * {
+  margin:0;
+  padding:0;
+}
+
+#winner .content {
+  position: relative;
+  text-align: center;
+}
+
+#winner header {
+  margin-top: 30px;
+  transform: skewX(-15deg);
+  text-align: center;
+
+  h1 {
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 20px 0 50px 0;
+    font-size: 3rem;
+    background-image: -webkit-linear-gradient(#fff, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+  }
+
+  h1 :after {
+    background: none;
+    content: attr(data-text);
+    left: 0;
+    position: absolute;
+    text-shadow: 5px 5px 0px #000;
+    top: 0;
+    z-index: -1;
+  }
+}
+
+#winner .video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+
+  iframe {
+    position: absolute;
+	  top: 0;
+	  left: 25%;
+	  width: 50%;
+	  height: 50%;
+  }
+}
+
+#winner #player-one-wins {
+  display: none;
+}
+
+#winner #player-two-wins {
+  // display: none;
+}
