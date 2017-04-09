@@ -34,7 +34,7 @@ $(document).ready(function(){
       console.log("test");
       $("#n100" + " " + playerNumber).css("display", "block");
       setTimeout(function(){
-        window.location.href = "http://www.google.com";
+        window.location.href = "winner.html";
       }, 2000);
 
     };
