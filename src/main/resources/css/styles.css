@@ -2,48 +2,51 @@ body {
   background-color: #fa3600;
   background-image: linear-gradient(black, #fa3600);
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
   box-sizing: border-box;
   font-family: 'Anton', sans-serif;
   letter-spacing: .1rem;
-  padding: 0 20px; }
+  text-align: center; }
 
 * {
   margin: 0;
   padding: 0; }
 
 .content {
-  margin-top: 30px;
-  position: relative; }
-  .content header {
-    transform: skewX(-15deg);
-    text-align: center; }
-    .content header h1 {
-      text-transform: uppercase;
-      display: inline-block;
-      margin: 20px 0;
-      font-size: 1.2rem;
-      background-image: -webkit-linear-gradient(orange, red);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      position: relative; }
-    .content header h1:after {
-      background: none;
-      content: attr(data-text);
-      left: 0;
-      position: absolute;
-      text-shadow: 5px 5px 0px #000;
-      top: 0;
-      z-index: -1; }
-    .content header span {
-      background-image: -webkit-linear-gradient(#fff, #fff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
+  position: relative;
+  text-align: center; }
+
+header {
+  margin-top: 10px;
+  transform: skewX(-15deg);
+  text-align: center; }
+  header h1 {
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    background-image: -webkit-linear-gradient(orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative; }
+  header h1:after {
+    background: none;
+    content: attr(data-text);
+    left: 0;
+    position: absolute;
+    text-shadow: 5px 5px 0px #000;
+    top: 0;
+    z-index: -1; }
+  header span {
+    background-image: -webkit-linear-gradient(#fff, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .gameboard {
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
-  position: relative; }
+  position: relative;
+  background: blue;
+  width: 300px;
+  margin: 0 auto; }
   .gameboard table {
     width: 300px;
     border-spacing: 0;
@@ -180,7 +183,8 @@ body {
     outline: none;
     font-size: 2rem;
     font-family: inherit;
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5); }
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5); }
   .play #current-dice-roll {
     color: white;
     width: 180px;
@@ -190,7 +194,8 @@ body {
     border: 2px solid #666;
     border-left: 2px solid #bbb;
     border-top: 2px solid #bbb;
-    margin-left: 20px; }
+    margin-left: 20px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5); }
     .play #current-dice-roll p {
       font-family: sans-serif;
       text-align: center;
@@ -204,14 +209,21 @@ body {
       font-family: sans-serif; }
 
 @media (min-width: 767px) {
-  .content header h1 {
-    font-size: 3rem; }
-  .content .gameboard table {
+  header {
+    margin-top: 30px; }
+    header h1 {
+      font-size: 3rem; }
+
+  .gameboard {
     width: 600px;
     height: 600px; }
-    .content .gameboard table tr td {
-      font-size: .8rem; }
-  .content .play {
+    .gameboard table {
+      width: 600px;
+      height: 600px; }
+      .gameboard table tr td {
+        font-size: .8rem; }
+
+  .play {
     bottom: -20%; } }
 
 /*# sourceMappingURL=styles.css.map */
