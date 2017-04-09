@@ -45,51 +45,9 @@ $(document).ready(function(){
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-// var array [
-// {
-//   dog1 {
-//     name: fluffy,
-//     coat: brown
-//   },
-// }
-//
-//   {
-//  dog2 {
-//    name: flrurr,
-//    coat: blue,
-//    number: 3
-//   }
-//   }
-// ]
-//
-// document.write(array.object.number)
-//
-//
-// var objects = [
-//   {
-//     shapes:
-//     {
-//       triangles: 2,
-//       squares: 3
-//     }
-//   },
-//   {
-//     dogs:
-//     {
-//       mutts: 2,
-//       puppies: 3
-//     }
-//   }
-// ];
+$(document).ready(function(){
+  $('.modal-trigger, .modal-alignment').click(function(){
+    $('.modal-trigger .fa-plus, .modal-trigger .fa-minus').toggle();
+    $('.modal-alignment').toggleClass('flex-me');
+  });
+});
