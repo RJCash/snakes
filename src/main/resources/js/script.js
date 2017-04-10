@@ -10,7 +10,7 @@ $(document).ready(function(){
     [2,4,4],
     [1,8,5],
     [2,6,2],
-    [1,105,92]
+    [1,105,97]
   ];
 
   $('#roll').click(function(){
@@ -34,12 +34,12 @@ $(document).ready(function(){
       console.log("test");
       $("#n100" + " " + playerNumber).css("display", "block");
       setTimeout(function(){
-        window.location.href = "winner.html";
+        window.location.href = "winner" + moves[turn][0] + ".html";
       }, 2000);
-
     };
 
   });
+
 
 
 });
