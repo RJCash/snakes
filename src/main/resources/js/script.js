@@ -11,6 +11,16 @@ $(document).ready(function(){
     [1,8,5],
     [2,6,2],
     [1,105,97]
+    // // {token: 1, location: 3, dice: 3},
+    // // {token: 2, location: 4, dice: 4},
+    // // {token: 1, location: 8, dice: 5},
+    // // {token: 2, location: 6, dice: 2}
+    // [1,3,3],
+    // [2,4,4],
+    // [1,8,5],
+    // [2,6,2],
+    // [1,105,92]
+      [[${oneGame}]]
   ];
 
   $('#roll').click(function(){
@@ -45,51 +55,9 @@ $(document).ready(function(){
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-// var array [
-// {
-//   dog1 {
-//     name: fluffy,
-//     coat: brown
-//   },
-// }
-//
-//   {
-//  dog2 {
-//    name: flrurr,
-//    coat: blue,
-//    number: 3
-//   }
-//   }
-// ]
-//
-// document.write(array.object.number)
-//
-//
-// var objects = [
-//   {
-//     shapes:
-//     {
-//       triangles: 2,
-//       squares: 3
-//     }
-//   },
-//   {
-//     dogs:
-//     {
-//       mutts: 2,
-//       puppies: 3
-//     }
-//   }
-// ];
+$(document).ready(function(){
+  $('.modal-trigger, .modal-alignment').click(function(){
+    $('.modal-trigger .fa-plus, .modal-trigger .fa-minus').toggle();
+    $('.modal-alignment').toggleClass('flex-me');
+  });
+});

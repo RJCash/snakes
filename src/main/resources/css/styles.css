@@ -68,6 +68,60 @@ body {
   position: relative;
   text-align: center; }
 
+.modal-trigger {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10000000000000; }
+  .modal-trigger .fa-minus {
+    display: none; }
+
+.modal-alignment {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000000;
+  display: none; }
+  .modal-alignment .modal-window {
+    width: 300px;
+    height: 300px;
+    margin-top: 15vh;
+    padding: 25px 30px 40px;
+    background-color: orange;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10000000000000;
+    letter-spacing: 0; }
+    .modal-alignment .modal-window h1 {
+      font-size: 1.4rem;
+      font-family: sans-serif;
+      margin: 0;
+      margin-bottom: 10px; }
+    .modal-alignment .modal-window hr {
+      border: none;
+      border-bottom: 1px solid black; }
+    .modal-alignment .modal-window h2 {
+      margin: 0;
+      margin-bottom: 10px;
+      font-family: sans-serif;
+      font-size: 1.2rem; }
+    .modal-alignment .modal-window p {
+      font-family: sans-serif;
+      line-height: 1.1rem;
+      font-size: .9rem; }
+
+.flex-me {
+  display: flex;
+  justify-content: center; }
+
 header {
   margin-top: 10px;
   transform: skewX(-15deg);
@@ -75,7 +129,7 @@ header {
   header h1 {
     text-transform: uppercase;
     display: inline-block;
-    margin: 20px 0;
+    margin: 10px 0;
     font-size: 1.2rem;
     background-image: -webkit-linear-gradient(orange, red);
     -webkit-background-clip: text;
@@ -97,7 +151,6 @@ header {
 .gameboard {
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
   position: relative;
-  background: blue;
   width: 300px;
   margin: 0 auto; }
   .gameboard table {
@@ -339,7 +392,7 @@ header {
   justify-content: center;
   position: absolute;
   bottom: -40%;
-  z-index: 100000000; }
+  z-index: 100000; }
   .play form {
     display: none; }
   .play input[type=button] {
@@ -376,10 +429,9 @@ header {
       font-family: sans-serif; }
 
 @media (min-width: 767px) {
-  header {
-    margin-top: 30px; }
-    header h1 {
-      font-size: 3rem; }
+  header h1 {
+    margin-top: 30px;
+    font-size: 3rem; }
 
   .gameboard {
     width: 600px;
@@ -391,6 +443,6 @@ header {
         font-size: .8rem; }
 
   .play {
-    bottom: -20%; } }
+    bottom: -23%; } }
 
 /*# sourceMappingURL=styles.css.map */
