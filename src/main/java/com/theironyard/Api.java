@@ -13,7 +13,6 @@ public class Api {
     public String getDataToSend(){
         //should print “getting data” to ide console
         Tester test = new Tester();
-
         //return json string
         return test.getJson();
     }

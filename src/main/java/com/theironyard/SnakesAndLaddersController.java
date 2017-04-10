@@ -1,6 +1,7 @@
 package com.theironyard;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -12,8 +13,9 @@ public class SnakesAndLaddersController {
 
 
     // Web root mapping
-    @RequestMapping(value = "/")
-    public String oneGame() {
+    @RequestMapping("/")
+    public String snakes(Model model) {
+
         return "index";
     }
 }

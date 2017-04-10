@@ -507,11 +507,21 @@
              th:src="@{/images/ladder.svg}"/>
         </table>
     </div>
+
       <div class="play">
-          <form class="form" th:action="@{index.html}" method="post">
-              <input type="button" name="" value="ROLL" id="roll"/>
-          </form>
+            <!--<form class="form" action="index.html" th:action="@{index.html}" method="post">-->
+                <!--<input type="button" name="submit" value="ROLL" id="roll"/>-->
+                <button class="form" id="roll">ROLL</button>
+            <!--</form>-->
+
+        <div id="current-dice-roll">
+        <p></p>
+        <h1></h1>
+
+        </div>
       </div>
+
+
   </div>
 
 
@@ -524,13 +534,9 @@
 
 
 
+  <script th:src="@{https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js}" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" th:src="@{https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js}"></script>
-
-  <script src="../static/js/script.js" th:src="@{/js/script.js}"></script>
-
+  <script th:src="@{/js/script.js}"></script>
 </body>
 
 </html>

@@ -9,9 +9,6 @@ $(document).ready(function() {
                 moves.push(array[i])
                 console.log(array[i])
             }
-            console.log(moves);
-
-
             $('#roll').click(function () {
                 turn = turn + 1;
 
@@ -33,8 +30,11 @@ $(document).ready(function() {
                     console.log("test");
                     $("#n100" + " " + playerNumber).css("display", "block");
                     setTimeout(function () {
-                        window.location.href = "winner" + moves[turn][0] + ".html";
+
+
                     }, 2000);
+
+                    window.location.href = "http://localhost:9090/winner" + moves[turn][0] + ".html";
                 }
                 ;
 
